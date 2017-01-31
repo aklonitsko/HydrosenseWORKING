@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.sensor.andrew.reagen.andrew.hydrosense.MainActivity">
+
+    <SurfaceView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/surfaceView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/stopBtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="testtesttest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/test1TV"
+        android:layout_alignLeft="@+id/test1TV"
+        android:layout_alignStart="@+id/test1TV"
+        android:layout_marginTop="27dp"
+        android:id="@+id/test2TV"
+        android:layout_alignRight="@+id/test1TV"
+        android:layout_alignEnd="@+id/test1TV" />
+
+    <TextView
+        android:text="testtemptest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test2TV"
+        android:layout_alignLeft="@+id/test2TV"
+        android:layout_alignStart="@+id/test2TV"
+        android:layout_marginTop="11dp"
+        android:id="@+id/test3TV"
+        android:layout_alignRight="@+id/test2TV"
+        android:layout_alignEnd="@+id/test2TV" />
+
+    <TextView
+        android:text="Time :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempTimeTV"
+        android:layout_below="@+id/startBtn"
+        android:layout_alignLeft="@+id/startBtn"
+        android:layout_alignStart="@+id/startBtn" />
+
+    <TextView
+        android:text="SG : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/test2TV"
+        android:layout_alignLeft="@+id/tempTimeTV"
+        android:layout_alignStart="@+id/tempTimeTV"
+        android:id="@+id/tempSGTV" />
+
+    <TextView
+        android:text="Temp :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempTempTV"
+        android:layout_alignBaseline="@+id/test3TV"
+        android:layout_alignBottom="@+id/test3TV"
+        android:layout_alignLeft="@+id/tempSGTV"
+        android:layout_alignStart="@+id/tempSGTV" />
+
+    <TextView
+        android:text="TESTTEXTVIEW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test1TV"
+        android:layout_marginBottom="86dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/tempTempTV"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignRight="@+id/optionBtn"
+        android:layout_alignEnd="@+id/optionBtn" />
+
+    <Button
+        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startBtn"
+        android:elevation="0dp"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/test2TV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stopBtn"
+        android:layout_alignBaseline="@+id/startBtn"
+        android:layout_alignBottom="@+id/startBtn"
+        android:layout_toRightOf="@+id/startBtn"
+        android:layout_toEndOf="@+id/startBtn" />
+
+    <Button
+        android:text="Option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/optionBtn"
+        android:layout_alignBaseline="@+id/stopBtn"
+        android:layout_alignBottom="@+id/stopBtn"
+        android:layout_toRightOf="@+id/stopBtn"
+        android:layout_toEndOf="@+id/stopBtn" />
+
+    <Button
+        android:text="Cali."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surfaceView"
+        android:layout_toEndOf="@+id/optionBtn"
+        android:id="@+id/calibratebtn"
+        android:layout_toRightOf="@+id/optionBtn" />
+
+</RelativeLayout>
